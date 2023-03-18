@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.array {
+  display: flex;
+  width: 75%;
+}

@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  place-items: end;
+}
+
+.array {
+  display: flex;
+  width: 75%;
+}

@@ -1,0 +1,6 @@
+.element {
+  width: 2px;
+  background-color: blue;
+  margin: 0 0 0 2px;
+  display: inline-block;
+}

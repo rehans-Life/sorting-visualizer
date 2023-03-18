@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+}
+
+.array {
+  display: flex;
+  width: 75%;
+}
