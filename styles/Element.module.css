@@ -1,4 +1,11 @@
 .element {
-  width: 16px;
-  margin: 0 0 0 1px;
+  width: 18px;
+  background-color: whitesmoke;
+  margin: 0px 1px 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .element {
+    width: 14px;
+  }
 }
