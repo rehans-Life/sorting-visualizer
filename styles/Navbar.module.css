@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  position: relative;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: rgb(25, 25, 25);
+}
+
+.heading {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.algorithms {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1090px) {
+  .algorithms {
+    display: none;
+  }
+  .visualizeBtn {
+    max-height: 40px;
+    align-self: center;
+  }
+}
+
+.algorithms button {
+  cursor: pointer;
+  transition: all 200ms ease-in;
+  padding: 4px 15px;
+  margin: 0px !important;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: Poppins;
+}
+
+@media screen and (max-width: 800px) {
+  .options {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu {
+    display: none !important;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.algorithms button:hover {
+  color: rgb(82, 82, 82);
+}
+
+.selectedAlgo {
+  background-color: rgb(25, 25, 25) !important;
+  border-radius: 2px !important;
+  color: whitesmoke;
+  transition: all 200ms ease-in;
+}
+
+.selectedAlgo:hover {
+  color: whitesmoke !important;
+}
+
+.visualizeBtn {
+  margin: 0px !important;
+  font-family: Poppins;
+  outline: none;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: rgb(25, 25, 25);
+  padding: 4px 15px;
+  color: whitesmoke;
+}
+.visualizeBtn:hover {
+  background-color: rgb(52, 52, 52);
+}
+
+.menu {
+  color: whitesmoke !important;
+  background-color: rgb(25, 25, 25);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.menu:hover {
+  background-color: rgb(53, 53, 53);
+}

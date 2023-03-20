@@ -1,0 +1,78 @@
+@media screen and (min-width: 1090px) {
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: none;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 15px;
+  max-height: 35px;
+  border-radius: 2px;
+  transition: all 200ms ease-in;
+}
+
+.selectClicked {
+  background-color: rgb(25, 25, 25);
+  color: whitesmoke;
+}
+
+.chevronUp {
+  animation-name: up;
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+}
+
+@keyframes up {
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.select p {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.dropdown button {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+  border: none;
+  color: whitesmoke;
+  padding: 7px;
+  font-weight: 500;
+  border-radius: 2px;
+  margin: 0 !important;
+}
+
+.dropdown button:hover {
+  background-color: whitesmoke;
+  color: rgb(25, 25, 25);
+  transition: all 200ms ease-in;
+}

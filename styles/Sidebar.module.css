@@ -1,0 +1,73 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 275px;
+  backdrop-filter: blur(40px);
+  flex-direction: column;
+  display: flex;
+}
+
+.close {
+  color: whitesmoke !important;
+  background-color: rgb(25, 25, 25);
+  height: 32px;
+  width: 32px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+.algorithms {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(25, 25, 25);
+  margin: 20px 10px;
+  border-radius: 4px;
+  /* padding: 5px 0; */
+}
+
+.algorithm {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 12px 10px;
+  transition: all 200ms ease-out;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.algorithm:hover {
+  background-color: whitesmoke;
+  color: rgb(25, 25, 25);
+}
+
+.selectedAlgorithm {
+  background-color: whitesmoke;
+  color: rgb(25, 25, 25);
+}
+
+.btn {
+  font-family: Poppins;
+  outline: none;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  margin: 10px !important;
+  color: rgb(25, 25, 25);
+}
+.btn:hover {
+  background-color: white;
+}

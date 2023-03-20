@@ -1,5 +1,4 @@
 .element {
-  width: 2px;
-  background-color: blue;
-  margin: 0 0 0 2px;
+  width: 16px;
+  margin: 0 0 0 1px;
 }
