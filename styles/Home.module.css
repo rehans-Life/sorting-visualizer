@@ -4,7 +4,7 @@
   background-color: black;
   width: 100%;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 .array {
