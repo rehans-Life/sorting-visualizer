@@ -23,7 +23,7 @@ export default function Navbar({
 
   return (
     <div ref={navRef} className={styles.container}>
-      <h1 className={styles.heading}>Sorting Visualizer</h1>
+      <h1 className={styles.heading}>Sound Sorting Visualizer</h1>
       <div className={styles.menu} onClick={() => setShowSidebar(!showSidebar)}>
         <BiMenu />{" "}
       </div>
