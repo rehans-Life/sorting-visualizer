@@ -39,10 +39,10 @@ export default function Home() {
 
   useEffect(() => {
     const findBars = () => {
-      let width = arrRef.current.clientWidth;
+      let width = window.innerWidth;
       let height =
         containerRef.current.clientHeight - navRef.current.clientHeight - 100;
-      let bars = width > 800 ? Math.floor(width / 18) : Math.floor(width / 12);
+      let bars = width > 800 ? Math.floor(width / 16) : Math.floor(width / 10);
       setBars(bars);
       setHeight(height);
     };
