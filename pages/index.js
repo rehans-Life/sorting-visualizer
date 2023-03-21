@@ -42,7 +42,7 @@ export default function Home() {
       let width = arrRef.current.clientWidth;
       let height =
         containerRef.current.clientHeight - navRef.current.clientHeight - 100;
-      let bars = width > 800 ? Math.floor(width / 18) : Math.floor(width / 14);
+      let bars = width > 800 ? Math.floor(width / 18) : Math.floor(width / 12);
       setBars(bars);
       setHeight(height);
     };
