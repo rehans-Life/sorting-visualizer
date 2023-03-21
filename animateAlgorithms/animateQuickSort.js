@@ -191,7 +191,7 @@ export function animateQuickSort(i, animations, array, setArray, setDisable) {
     setArray,
     animations,
     i,
-    0,
+    50,
     setDisable
   );
 }

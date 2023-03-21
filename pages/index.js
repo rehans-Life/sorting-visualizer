@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Element from "../components/Element";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
+import { timeComplexities } from "../utils/data";
 import { generateRandomArray } from "../utils/generateRandomArray";
 
 export class Bar {
@@ -35,7 +36,6 @@ export default function Home() {
   const arrRef = useRef();
   const containerRef = useRef();
   const navRef = useRef();
-  // playNote(200);
 
   useEffect(() => {
     const findBars = () => {
@@ -71,6 +71,20 @@ export default function Home() {
         height={height}
         bars={bars}
       />
+      {selectedAlgo && (
+        <div className={styles.timeComplexities}>
+          <h4>
+            <b>{selectedAlgo}</b>:
+          </h4>
+          {Object.entries(timeComplexities[selectedAlgo]).map(
+            ([c, t], index) => (
+              <p key={index}>
+                {c}: {t}
+              </p>
+            )
+          )}
+        </div>
+      )}
       <div ref={arrRef} className={styles.array}>
         {array.map(({ value, backgroundColor }, index) => (
           <Element

@@ -7,7 +7,7 @@ export function finalAnimation(i, prevDelay, array, setArray, setDisable) {
       }
       setArray(newArray);
       setDisable(false);
-    }, prevDelay + 10);
+    }, 50);
     return;
   }
 

@@ -57,7 +57,7 @@ function animateShifts(
       setArray,
       z,
       swaps,
-      (x + 6) * 5,
+      50,
       to,
       setDisable
     );
@@ -89,7 +89,7 @@ function animateSwaps(z, swaps, array, setArray, setDisable) {
 
   setArray(newArray);
 
-  animateShifts(0, shifts, newArray, setArray, z, swaps, 5 * 5, to, setDisable);
+  animateShifts(0, shifts, newArray, setArray, z, swaps, 50, to, setDisable);
 }
 
 function animateShiftdowns(i, shiftdowns, array, setArray, swaps, setDisable) {
@@ -109,7 +109,7 @@ function animateShiftdowns(i, shiftdowns, array, setArray, swaps, setDisable) {
     setArray,
     i,
     shiftdowns,
-    5 * 10,
+    50,
     swaps,
     setDisable
   );
@@ -156,7 +156,7 @@ function animateShiftdown(
       setArray,
       i,
       shiftdowns,
-      (j + 6) * 10,
+      50,
       swaps,
       setDisable
     );

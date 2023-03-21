@@ -18,3 +18,19 @@
 .container button {
   margin-top: 20px;
 }
+
+.timeComplexities {
+  color: white;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+.timeComplexities h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.timeComplexities p {
+  margin: 0px;
+}
