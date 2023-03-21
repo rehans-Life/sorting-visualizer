@@ -60,7 +60,9 @@ export default function Sidebar({
         disabled={disable}
         className={styles.btn}
         onClick={() => {
-          let ctx = new AudioContext();
+          let ctx = new (AudioContext ||
+            webkitAudioContext ||
+            window.webkitAudioContext)();
           setArray(generateRandomArray(bars, height, ctx));
         }}
       >

@@ -8,10 +8,10 @@ import { timeComplexities } from "../utils/data";
 import { generateRandomArray } from "../utils/generateRandomArray";
 
 export class Bar {
-  constructor(value, backgroundColor, ctx) {
+  constructor(value, backgroundColor, ctx, level = 0) {
     this.value = value;
     this.backgroundColor = backgroundColor;
-    this.level = 0;
+    this.level = level;
     this.audioCtx = ctx;
     this.playNote = () => {
       let osc = this.audioCtx.createOscillator();
@@ -51,7 +51,9 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    let ctx = new AudioContext();
+    let ctx = new (AudioContext ||
+      webkitAudioContext ||
+      window.webkitAudioContext)();
     setArray(generateRandomArray(bars, height, ctx));
   }, [bars, height]);
 
