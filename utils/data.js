@@ -3,9 +3,6 @@ export const algorithms = [
     name: "Quick Sort",
   },
   {
-    name: "Heap Sort",
-  },
-  {
     name: "Merge Sort",
   },
   {
@@ -13,6 +10,9 @@ export const algorithms = [
   },
   {
     name: "Insertion Sort",
+  },
+  {
+    name: "Heap Sort",
   },
 ];
 
